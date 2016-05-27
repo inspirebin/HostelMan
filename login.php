@@ -11,21 +11,18 @@ $result = mysqli_query($con,$sql)or die(mysqli_error($con));
 
 while($row = mysqli_fetch_array($result)) {
     $passwd = $row['password'];
-} 
-
-if($passwd == $password)
-{
- session_start();
-   
-   if( isset( $_SESSION['counter'] ) ) {
-      $_SESSION['counter'] += 1;
-   }else {
-      $_SESSION['counter'] = 1;
-   }
-	
-   $msg = "You have visited this page ".  $_SESSION['counter'];
-   $msg .= "in this session.";
 }
+    if(isset($passwd)){
+        if($passwd == $password)
+        {
+            session_start();
+            $_SESSION['userid'] = $username;
+            header('Location: student_dashboard.php');
+        }
+        else{
+            echo "password Incorrect";
+        }
+    }
 else
 {
 echo "Password Incorrect";    
