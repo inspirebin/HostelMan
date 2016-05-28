@@ -2,13 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7c4c1bc-084a-4f9f-a66b-59263bf6027c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/student_dashboard.html" afterPath="$PROJECT_DIR$/student_dashboard.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/announce.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/approve.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/disapprove.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/faculty_login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/faculty_login.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/remark.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/session.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/submit_maintenance.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/warden_announce.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/warden_login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/warden_login.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/remarks.html" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/faculty_dashboard.html" afterPath="$PROJECT_DIR$/faculty_dashboard.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/maintenance.html" afterPath="$PROJECT_DIR$/maintenance.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/warden_dashboard.html" afterPath="$PROJECT_DIR$/warden_dashboard.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/warden_maintain.html" afterPath="$PROJECT_DIR$/warden_maintain.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/warden_remark.html" afterPath="$PROJECT_DIR$/warden_remark.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/leave_form.html" afterPath="$PROJECT_DIR$/leave_form.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maintenance.html" afterPath="$PROJECT_DIR$/maintenance.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/remarks.html" afterPath="$PROJECT_DIR$/remarks.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student_dashboard.html" afterPath="$PROJECT_DIR$/student_dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student_dashboard.php" afterPath="$PROJECT_DIR$/student_dashboard.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/submit_leave.php" afterPath="$PROJECT_DIR$/submit_leave.php" />
     </list>
     <ignored path="project.iws" />
@@ -31,118 +46,133 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="student_login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/student_login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="12.148149">
-              <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="student_dashboard.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/student_dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-176.0">
-              <caret line="264" column="5" selection-start-line="264" selection-start-column="5" selection-end-line="264" selection-end-column="5" />
+            <state vertical-scroll-proportion="-19.185184">
+              <caret line="206" column="25" selection-start-line="206" selection-start-column="25" selection-end-line="206" selection-end-column="25" />
+              <folding>
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1464445016163" expanded="true" signature="7505:7560" placeholder="SELECT * FRO... announcements" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="faculty_dashboard.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/faculty_dashboard.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-16.518518">
+              <caret line="233" column="42" selection-start-line="213" selection-start-column="43" selection-end-line="233" selection-end-column="42" />
+              <folding>
+                <marker date="1464430675029" expanded="true" signature="5485:5572" placeholder="SELECT * FRO... student_leave" />
+                <marker date="1464430675029" expanded="true" signature="9672:9841" placeholder="SELECT * FRO... remarks" />
+                <marker date="1464430675029" expanded="true" signature="10190:10191" placeholder="..." />
+                <marker date="1464430675029" expanded="true" signature="11432:11663" placeholder="..." />
+                <marker date="1464430675029" expanded="true" signature="11513:11632" placeholder="..." />
+                <marker date="1464430675029" expanded="true" signature="11970:13041" placeholder="..." />
+                <marker date="1464430675029" expanded="true" signature="12012:13023" placeholder="..." />
+                <marker date="1464430675029" expanded="true" signature="12052:12814" placeholder="..." />
+                <marker date="1464430675029" expanded="true" signature="12077:12791" placeholder="..." />
+                <marker date="1464430675029" expanded="true" signature="12106:12143" placeholder="..." />
+                <marker date="1464430675029" expanded="true" signature="12106:12247" placeholder="..." />
+                <marker date="1464430675029" expanded="true" signature="12147:12217" placeholder="..." />
+                <marker date="1464430675029" expanded="true" signature="12276:12420" placeholder="..." />
+                <marker date="1464430675029" expanded="true" signature="12317:12390" placeholder="..." />
+                <marker date="1464430675029" expanded="true" signature="12449:12595" placeholder="..." />
+                <marker date="1464430675029" expanded="true" signature="12490:12565" placeholder="..." />
+                <marker date="1464430675029" expanded="true" signature="12624:12765" placeholder="..." />
+                <marker date="1464430675029" expanded="true" signature="12665:12735" placeholder="..." />
+                <marker date="1464430675029" expanded="true" signature="12863:13004" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="warden_remark.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/warden_remark.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="42.814816">
+              <caret line="139" column="74" selection-start-line="0" selection-start-column="0" selection-end-line="234" selection-end-column="9" />
+              <folding>
+                <marker date="1464421007390" expanded="true" signature="5312:5353" placeholder="SELECT `name... student" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="warden_dashboard.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/warden_dashboard.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.09063444">
+              <caret line="83" column="46" selection-start-line="83" selection-start-column="46" selection-end-line="83" selection-end-column="46" />
+              <folding>
+                <marker date="1464445180844" expanded="true" signature="6056:6205" placeholder="SELECT * FRO... student_leave" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="warden_announce.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/warden_announce.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6666667">
+              <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="submit_leave.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/submit_leave.php">
+      <file leaf-file-name="submit_maintenance.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/submit_maintenance.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6797583">
-              <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
-              <folding>
-                <marker date="1464346214177" expanded="true" signature="427:567" placeholder="INSERT INTO `student_leave`... " />
-                <marker date="1464346214177" expanded="true" signature="427:651" placeholder="INSERT INTO `student_leave`... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="remarks.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/remarks.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="16.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-10.0">
+              <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="maintenance.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/maintenance.html">
+      <file leaf-file-name="announce.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/announce.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="104.14815">
-              <caret line="76" column="6" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
+            <state vertical-scroll-proportion="-4.0">
+              <caret line="6" column="92" selection-start-line="6" selection-start-column="92" selection-end-line="6" selection-end-column="92" />
               <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1464444034567" expanded="true" signature="161:238" placeholder="INSERT INTO `announcements`... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="faculty_dashboard.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/faculty_dashboard.html">
+      <file leaf-file-name="warden_maintain.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/warden_maintain.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6666667">
-              <caret line="178" column="14" selection-start-line="178" selection-start-column="14" selection-end-line="178" selection-end-column="14" />
+            <state vertical-scroll-proportion="-21.333334">
+              <caret line="234" column="0" selection-start-line="234" selection-start-column="0" selection-end-line="234" selection-end-column="9" />
               <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#97#1296#0#HTML" expanded="false" />
+                <marker date="1464413878559" expanded="true" signature="5114:5235" placeholder="SELECT * FRO... student_mnt" />
+                <marker date="1464413878559" expanded="true" signature="5235:5302" placeholder="SELECT * FRO... student_mnt" />
+                <marker date="1464413878559" expanded="true" signature="5371:5667" placeholder="..." />
+                <marker date="1464413878559" expanded="true" signature="5404:5659" placeholder="..." />
+                <marker date="1464413878559" expanded="true" signature="5703:6386" placeholder="..." />
+                <marker date="1464413878559" expanded="true" signature="6008:6386" placeholder="..." />
+                <marker date="1464413878559" expanded="true" signature="6799:6865" placeholder="..." />
+                <marker date="1464413878559" expanded="true" signature="6828:6865" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="warden_maintain.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/warden_maintain.html">
+      <file leaf-file-name="maintenance.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/maintenance.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.62963">
-              <caret line="238" column="41" selection-start-line="238" selection-start-column="41" selection-end-line="238" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="175" column="0" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
               <folding>
-                <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#nav#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#footer#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1464420475311" expanded="true" signature="6769:6814" placeholder="SELECT `ward... warden" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="warden_remark.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/warden_remark.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6666667">
-              <caret line="14" column="44" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.0">
-              <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-              <folding>
-                <marker date="1464346033079" expanded="true" signature="166:225" placeholder="SELECT passw... student" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dbconnect.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dbconnect.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3333334">
-              <caret line="2" column="71" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="71" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -153,6 +183,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Html5" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -165,17 +196,34 @@
         <option value="$PROJECT_DIR$/student_login.php" />
         <option value="$PROJECT_DIR$/student_login.html" />
         <option value="$PROJECT_DIR$/student_dashboard.html" />
-        <option value="$PROJECT_DIR$/maintenance.html" />
         <option value="$PROJECT_DIR$/faculty_dashboard.html" />
-        <option value="$PROJECT_DIR$/warden_login.html" />
         <option value="$PROJECT_DIR$/warden_dashboard.html" />
         <option value="$PROJECT_DIR$/warden_maintain.html" />
-        <option value="$PROJECT_DIR$/warden_remark.html" />
         <option value="$PROJECT_DIR$/dbconnect.php" />
         <option value="$PROJECT_DIR$/leave_form.html" />
+        <option value="$PROJECT_DIR$/faculty_login.html" />
         <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/submit_leave.php" />
+        <option value="$PROJECT_DIR$/faculty_login.php" />
+        <option value="$PROJECT_DIR$/approve.php" />
+        <option value="$PROJECT_DIR$/disapprove.php" />
+        <option value="$PROJECT_DIR$/maintenance.html" />
+        <option value="$PROJECT_DIR$/faculty_login.php.html" />
+        <option value="$PROJECT_DIR$/warden_login.html" />
+        <option value="$PROJECT_DIR$/warden_login.php" />
+        <option value="$PROJECT_DIR$/session.php" />
+        <option value="$PROJECT_DIR$/warden_maintain.php" />
+        <option value="$PROJECT_DIR$/remarks.php" />
+        <option value="$PROJECT_DIR$/warden_remark.html" />
+        <option value="$PROJECT_DIR$/maintenance.php" />
+        <option value="$PROJECT_DIR$/remark.php" />
+        <option value="$PROJECT_DIR$/warden_remark.php" />
+        <option value="$PROJECT_DIR$/faculty_dashboard.php" />
+        <option value="$PROJECT_DIR$/warden_announce.php" />
+        <option value="$PROJECT_DIR$/submit_maintenance.php" />
+        <option value="$PROJECT_DIR$/announce.php" />
         <option value="$PROJECT_DIR$/student_dashboard.php" />
+        <option value="$PROJECT_DIR$/warden_dashboard.php" />
       </list>
     </option>
   </component>
@@ -184,11 +232,14 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1444" />
+    <option name="width" value="1456" />
     <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -247,15 +298,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="recentsLimit" value="5" />
-    <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="SearchEverywhereHistoryKey" value="db&#9;FILE&#9;file://C:/xampp/htdocs/HostelMan/dbconnect.php&#10;login&#9;FILE&#9;file://C:/xampp/htdocs/HostelMan/login.php" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SearchEverywhereHistoryKey" value="stu&#9;FILE&#9;file://C:/xampp/htdocs/HostelMan/student_dashboard.php&#10;re&#9;FILE&#9;file://C:/xampp/htdocs/HostelMan/remarks.html&#10;main&#9;FILE&#9;file://C:/xampp/htdocs/HostelMan/maintenance.php&#10;sess&#9;FILE&#9;file://C:/xampp/htdocs/HostelMan/session.php&#10;fa&#9;FILE&#9;file://C:/xampp/htdocs/HostelMan/faculty_dashboard.php&#10;wa&#9;FILE&#9;file://C:/xampp/htdocs/HostelMan/warden_dashboard.php&#10;fac&#9;FILE&#9;file://C:/xampp/htdocs/HostelMan/faculty_login.php&#10;lea&#9;FILE&#9;file://C:/xampp/htdocs/HostelMan/submit_leave.php&#10;db&#9;FILE&#9;file://C:/xampp/htdocs/HostelMan/dbconnect.php&#10;login&#9;FILE&#9;file://C:/xampp/htdocs/HostelMan/login.php" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.warden_remark.html">
+  <component name="RunManager" selected="JavaScript Debug.warden_remark.php">
     <configuration default="false" name="table.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/project/table.html">
       <method />
     </configuration>
-    <configuration default="false" name="warden_remark.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/project/warden_remark.html">
+    <configuration default="false" name="warden_remark.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/project/warden_remark.php">
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -289,11 +340,11 @@
     </configuration>
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.table.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.warden_remark.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.warden_remark.php" />
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.warden_remark.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.warden_remark.php" />
         <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.table.html" />
       </list>
     </recent_temporary>
@@ -312,28 +363,56 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1444" height="876" extended-state="0" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18930636" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18767908" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286908" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286908" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18767908" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -343,14 +422,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/student_login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/student_dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -369,154 +440,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/faculty_dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="178" column="14" selection-start-line="178" selection-start-column="14" selection-end-line="178" selection-end-column="14" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/warden_maintain.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="63" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#nav#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#footer#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/warden_remark.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1464346033079" expanded="true" signature="166:225" placeholder="SELECT passw... student" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dbconnect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="71" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/warden_dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="182" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#nav#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#footer#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student_login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student_dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="32" selection-start-line="68" selection-start-column="32" selection-end-line="68" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leave_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="154" column="20" selection-start-line="154" selection-start-column="20" selection-end-line="207" selection-end-column="25" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maintenance.html">
+    <entry file="file://$PROJECT_DIR$/maintenance.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="76" column="6" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1464420475311" expanded="true" signature="6769:6814" placeholder="SELECT `ward... warden" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/faculty_dashboard.html">
+    <entry file="file://$PROJECT_DIR$/faculty_dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="178" column="14" selection-start-line="178" selection-start-column="14" selection-end-line="178" selection-end-column="14" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1464430675029" expanded="true" signature="5485:5572" placeholder="SELECT * FRO... student_leave" />
+            <marker date="1464430675029" expanded="true" signature="9672:9841" placeholder="SELECT * FRO... remarks" />
+            <marker date="1464430675029" expanded="true" signature="10190:10191" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="11432:11663" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="11513:11632" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="11970:13041" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12012:13023" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12052:12814" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12077:12791" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12106:12143" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12106:12247" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12147:12217" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12276:12420" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12317:12390" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12449:12595" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12490:12565" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12624:12765" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12665:12735" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12863:13004" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warden_maintain.html">
+    <entry file="file://$PROJECT_DIR$/warden_maintain.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="63" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#nav#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#footer#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#97#1296#0#HTML" expanded="false" />
+            <element signature="e#6670#7764#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warden_remark.html">
+    <entry file="file://$PROJECT_DIR$/warden_remark.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1464421007390" expanded="true" signature="5312:5353" placeholder="SELECT `name... student" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warden_dashboard.html">
+    <entry file="file://$PROJECT_DIR$/warden_dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="182" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#nav#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#footer#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#97#1292#0#HTML" expanded="false" />
+            <element signature="e#3014#5047#0#HTML" expanded="false" />
+            <element signature="e#8421#9515#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -533,6 +523,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="457" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -562,57 +553,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/maintenance.html">
+    <entry file="file://$PROJECT_DIR$/maintenance.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="76" column="6" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1464420475311" expanded="true" signature="6769:6814" placeholder="SELECT `ward... warden" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/faculty_dashboard.html">
+    <entry file="file://$PROJECT_DIR$/faculty_dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="178" column="14" selection-start-line="178" selection-start-column="14" selection-end-line="178" selection-end-column="14" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1464430675029" expanded="true" signature="5485:5572" placeholder="SELECT * FRO... student_leave" />
+            <marker date="1464430675029" expanded="true" signature="9672:9841" placeholder="SELECT * FRO... remarks" />
+            <marker date="1464430675029" expanded="true" signature="10190:10191" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="11432:11663" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="11513:11632" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="11970:13041" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12012:13023" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12052:12814" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12077:12791" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12106:12143" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12106:12247" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12147:12217" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12276:12420" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12317:12390" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12449:12595" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12490:12565" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12624:12765" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12665:12735" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12863:13004" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warden_maintain.html">
+    <entry file="file://$PROJECT_DIR$/warden_maintain.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="63" column="24" selection-start-line="0" selection-start-column="0" selection-end-line="241" selection-end-column="0" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#nav#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#footer#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#97#1296#0#HTML" expanded="false" />
+            <element signature="e#6670#7764#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warden_remark.html">
+    <entry file="file://$PROJECT_DIR$/warden_remark.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1464421007390" expanded="true" signature="5312:5353" placeholder="SELECT `name... student" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warden_dashboard.html">
+    <entry file="file://$PROJECT_DIR$/warden_dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="182" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#nav#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#footer#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#97#1292#0#HTML" expanded="false" />
+            <element signature="e#3014#5047#0#HTML" expanded="false" />
+            <element signature="e#8421#9515#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -629,6 +636,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="457" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -669,6 +677,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="457" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -683,6 +692,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="457" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -690,36 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/warden_dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="182" column="20" selection-start-line="0" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#nav#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#footer#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/leave_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.5545025">
-          <caret line="167" column="42" selection-start-line="167" selection-start-column="42" selection-end-line="167" selection-end-column="42" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/warden_remark.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6666667">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -732,44 +712,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/faculty_dashboard.html">
+    <entry file="file://$PROJECT_DIR$/approve.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6666667">
-          <caret line="178" column="14" selection-start-line="178" selection-start-column="14" selection-end-line="178" selection-end-column="14" />
+        <state vertical-scroll-proportion="-12.0">
+          <caret line="18" column="2" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="2" />
           <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1464368905992" expanded="true" signature="97:154" placeholder="UPDATE `stud... " />
+            <marker date="1464368905992" expanded="true" signature="97:156" placeholder="UPDATE `stud... " />
+            <marker date="1464368905992" expanded="true" signature="97:162" placeholder="UPDATE `stud... " />
+            <marker date="1464368905992" expanded="true" signature="97:163" placeholder="UPDATE `stud... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/warden_maintain.html">
+    <entry file="file://$PROJECT_DIR$/student_dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.62963">
-          <caret line="238" column="41" selection-start-line="238" selection-start-column="41" selection-end-line="238" selection-end-column="41" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#nav#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#footer#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/maintenance.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="104.14815">
-          <caret line="76" column="6" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
-          <folding>
-            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/remarks.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="16.0">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -777,37 +735,228 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/student_login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="12.148149">
-          <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
+        <state vertical-scroll-proportion="-6.851852">
+          <caret line="72" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icons.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/disapprove.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.3333335">
+          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+          <folding>
+            <marker date="1464370248902" expanded="true" signature="97:162" placeholder="UPDATE `stud... " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.0">
-          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
+        <state vertical-scroll-proportion="-0.5185185">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="25" />
           <folding>
-            <marker date="1464346033079" expanded="true" signature="166:225" placeholder="SELECT passw... student" />
+            <marker date="1464349473676" expanded="true" signature="166:225" placeholder="SELECT passw... student" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faculty_login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.0">
+          <caret line="6" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warden_login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.666667">
+          <caret line="49" column="97" selection-start-line="49" selection-start-column="97" selection-end-line="49" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faculty_login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.3333335">
+          <caret line="11" column="47" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="2" />
+          <folding>
+            <marker date="1464350499008" expanded="true" signature="178:227" placeholder="SELECT passw... faculty" />
+            <marker date="1464350499008" expanded="true" signature="178:236" placeholder="SELECT passw... faculty" />
+            <marker date="1464350499008" expanded="true" signature="178:237" placeholder="SELECT passw... faculty" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/submit_leave.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.333333">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <marker date="1464349886038" expanded="true" signature="426:566" placeholder="INSERT INTO `student_leave`... " />
+            <marker date="1464349886038" expanded="true" signature="426:650" placeholder="INSERT INTO `student_leave`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.0">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warden_login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.3333335">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          <folding>
+            <marker date="1464408126121" expanded="true" signature="178:235" placeholder="SELECT passw... warden" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/leave_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.7794561">
+          <caret line="167" column="42" selection-start-line="167" selection-start-column="42" selection-end-line="167" selection-end-column="42" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warden_maintain.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-21.333334">
+          <caret line="234" column="0" selection-start-line="234" selection-start-column="0" selection-end-line="234" selection-end-column="9" />
+          <folding>
+            <element signature="e#97#1296#0#HTML" expanded="false" />
+            <marker date="1464413878559" expanded="true" signature="5114:5235" placeholder="SELECT * FRO... student_mnt" />
+            <marker date="1464413878559" expanded="true" signature="5235:5302" placeholder="SELECT * FRO... student_mnt" />
+            <marker date="1464413878559" expanded="true" signature="5371:5667" placeholder="..." />
+            <marker date="1464413878559" expanded="true" signature="5404:5659" placeholder="..." />
+            <marker date="1464413878559" expanded="true" signature="5703:6386" placeholder="..." />
+            <marker date="1464413878559" expanded="true" signature="6008:6386" placeholder="..." />
+            <marker date="1464413878559" expanded="true" signature="6799:6865" placeholder="..." />
+            <marker date="1464413878559" expanded="true" signature="6828:6865" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/remark.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6797583">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <marker date="1464420852432" expanded="true" signature="237:294" placeholder="select advis... student" />
+            <marker date="1464420852432" expanded="true" signature="461:579" placeholder="INSERT INTO `remarks`... " />
+            <marker date="1464420852432" expanded="true" signature="461:597" placeholder="INSERT INTO `remarks`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maintenance.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="175" column="0" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
+          <folding>
+            <marker date="1464420475311" expanded="true" signature="6769:6814" placeholder="SELECT `ward... warden" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warden_remark.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="42.814816">
+          <caret line="139" column="74" selection-start-line="0" selection-start-column="0" selection-end-line="234" selection-end-column="9" />
+          <folding>
+            <marker date="1464421007390" expanded="true" signature="5312:5353" placeholder="SELECT `name... student" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/submit_maintenance.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/announce.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.0">
+          <caret line="6" column="92" selection-start-line="6" selection-start-column="92" selection-end-line="6" selection-end-column="92" />
+          <folding>
+            <marker date="1464444034567" expanded="true" signature="161:238" placeholder="INSERT INTO `announcements`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/faculty_dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.518518">
+          <caret line="233" column="42" selection-start-line="213" selection-start-column="43" selection-end-line="233" selection-end-column="42" />
+          <folding>
+            <marker date="1464430675029" expanded="true" signature="5485:5572" placeholder="SELECT * FRO... student_leave" />
+            <marker date="1464430675029" expanded="true" signature="9672:9841" placeholder="SELECT * FRO... remarks" />
+            <marker date="1464430675029" expanded="true" signature="10190:10191" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="11432:11663" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="11513:11632" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="11970:13041" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12012:13023" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12052:12814" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12077:12791" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12106:12143" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12106:12247" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12147:12217" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12276:12420" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12317:12390" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12449:12595" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12490:12565" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12624:12765" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12665:12735" placeholder="..." />
+            <marker date="1464430675029" expanded="true" signature="12863:13004" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/student_dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-176.0">
-          <caret line="264" column="5" selection-start-line="264" selection-start-column="5" selection-end-line="264" selection-end-column="5" />
+        <state vertical-scroll-proportion="-19.185184">
+          <caret line="206" column="25" selection-start-line="206" selection-start-column="25" selection-end-line="206" selection-end-column="25" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1464445016163" expanded="true" signature="7505:7560" placeholder="SELECT * FRO... announcements" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/warden_announce.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6666667">
+          <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/submit_leave.php">
+    <entry file="file://$PROJECT_DIR$/warden_dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6797583">
-          <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
+        <state vertical-scroll-proportion="0.09063444">
+          <caret line="83" column="46" selection-start-line="83" selection-start-column="46" selection-end-line="83" selection-end-column="46" />
           <folding>
-            <marker date="1464346214177" expanded="true" signature="427:567" placeholder="INSERT INTO `student_leave`... " />
-            <marker date="1464346214177" expanded="true" signature="427:651" placeholder="INSERT INTO `student_leave`... " />
+            <marker date="1464445180844" expanded="true" signature="6056:6205" placeholder="SELECT * FRO... student_leave" />
           </folding>
         </state>
       </provider>

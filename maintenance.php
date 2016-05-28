@@ -1,3 +1,7 @@
+<?php
+require("session.php");
+if(checkSession() == 1){
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,7 +9,7 @@
     <link rel="icon" type="image/png" href="assets/img/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>Maintenance Requests</title>
+    <title>Maintenance</title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -34,7 +38,7 @@
 <body>
 
 <div class="wrapper">
-    <div class="sidebar" data-color="purple" data-image="assets/img/sidebar-5.jpg">
+    <div class="sidebar" data-color="azure" data-image="assets/img/sidebar-5.jpg">
 
         <!--
 
@@ -42,7 +46,6 @@
             Tip 2: you can also add an image using data-image tag
 
         -->
-
         <div class="sidebar-wrapper">
             <div class="logo">
                 <a href="#" class="simple-text">
@@ -52,24 +55,23 @@
 
             <ul class="nav">
                 <li>
-                    <a href="warden_dashboard.html">
-                        <i class="pe-7s-id"></i>
-                        <p>Leave forms</p>
-                    </a>
-                </li>
-                <li class="active">
-                    <a href="#">
-                        <i class="pe-7s-tools"></i>
-                        <p>Maintenence Requests</p>
+                    <a href="student_dashboard.php">
+                        <i class="pe-7s-study"></i>
+                        <p>Home</p>
                     </a>
                 </li>
                 <li>
-                    <a href="warden_remark.html">
-                        <i class="pe-7s-help2"></i>
-                        <p>Remark</p>
+                    <a href="leave_form.html">
+                        <i class="pe-7s-id"></i>
+                        <p>Leave form</p>
                     </a>
                 </li>
-
+                <li class="active">
+                    <a href="maintenance.php">
+                        <i class="pe-7s-tools"></i>
+                        <p>Maintenance</p>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
@@ -84,10 +86,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Maintenance</a>
+                    <a class="navbar-brand" href="#">Request Maintenance</a>
                 </div>
                 <div class="collapse navbar-collapse">
-
                     <ul class="nav navbar-nav navbar-right">
                         <li>
                             <a href="">
@@ -118,75 +119,113 @@
                 </div>
             </div>
         </nav>
-
         <div class="content">
-            <!-- Warden announcements -->
 
-            <div class="col-md-12">
+            <!-- maintenence form -->
+            <div class="col-md-8">
                 <div class="card">
                     <div class="header">
-                        <h4 class="title">Maintenance requests</h4>
+                        <h4 class="title">Maintanence request</h4>
                     </div>
-                    <div class="content table-responsive table-full-width">
-                        <table class="table table-hover table-striped">
-                            <thead>
-                            <tr><th>Name</th>
-                                <th>Category</th>
-                                <th>Description</th>
-                                <th>Room number</th>
-                            </tr></thead>
-                            <tbody>
-                            <tr>
-                                <td>sasi kuttan</td>
-                                <td>plumbing</td>
-                                <td>Closet filled with poop</td>
-                                <td>122</td>
-                                <th><button class="btn btn-success disabled">Approved</button></th>
-                            </tr>
-                            </tbody>
-                        </table>
+                    <div class="content">
+                        <form action="submit_maintenance.php" method="POST">
+                            <div class="row">
 
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Select category</label>
+                                        <select name="category" class="form-control">
+                                            <option value="plumbing">plumbing</option>
+                                            <option value="carpenter">carpenter</option>
+                                            <option value="Electrical">Electrical</option>
+                                            <option value="Others">Others</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Detail Description of the problem</label>
+                                            <textarea name="description" rows="5" class="form-control" placeholder="Here can be your description" value="Mike"></textarea>
+                                        </div>
+                                    </div>
+                                    <?php
+                                      require('dbconnect.php');
+                                    ?>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>warden</label>
+                                            <select name="warden" id="" class="form-control">
+                                                <?php
+                                                  $sql = "SELECT `warden_id`,`warden_name`FROM `warden`";
+                                                 $result = $con->query($sql);
+                                                if ($result->num_rows > 0) {
+                                                    // output data of each row
+                                                    while($row = $result->fetch_assoc()) {
+                                                        ?>
+                                                        <option value="<?php echo $row['warden_id'] ?>"><?php echo $row['warden_name'] ?></option>
+                                                    <?php
+                                                    }
+                                                } else {
+                                                    echo "0 results";
+                                                }
+                                                ?>
+                                                
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                </div>
+                            <button type="submit" class="btn btn-info btn-fill pull-right">Submit</button>
+                            <div class="clearfix"></div>
+                        </form>
                     </div>
                 </div>
             </div>
-            <!--end  warden announcements -->
+            <!-- maintenence form -->
+
         </div>
-
-
-        <footer class="footer">
-            <div class="container-fluid">
-                <nav class="pull-left">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Company
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Portfolio
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Blog
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <p class="copyright pull-right">
-                    &copy; 2016 <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
-                </p>
-            </div>
-        </footer>
-
     </div>
 </div>
+</div>
+</div>
+
+
+<footer class="footer">
+    <div class="container-fluid">
+        <nav class="pull-left">
+            <ul>
+                <li>
+                    <a href="#">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Company
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Portfolio
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Blog
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <p class="copyright pull-right">
+            &copy; 2016 <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
+        </p>
+    </div>
+</footer>
+
+</div>
+</div>
+
 
 </body>
 
@@ -212,4 +251,6 @@
 <!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
 <script src="assets/js/demo.js"></script>
 
+
 </html>
+<?php }?>

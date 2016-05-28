@@ -1,3 +1,13 @@
+<?php
+session_start();
+ini_set('display_errors', 1);
+if(!isset($_SESSION['faculty_id']) && !empty($_SESSION['faculty_id'])) {
+    header('Location:faculty_login.html');
+    ?>
+<?php }
+else{
+    require('dbconnect.php');
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -101,9 +111,9 @@
         <div class="content">
             <!-- Warden announcements -->
             <div class="col-md-12">
-            <div class="card ">
+            <div class="card">
                 <div class="header">
-                    <h4 class="title">Leave forms</h4>
+                    <h4 class="title text-center"><b>Leave forms</b></h4>
                 </div>
                 <div class="content">
                     <!--Leave forms-->
@@ -119,18 +129,45 @@
                                         <th>Date of leave</th>
                                         <th>Date of arrival</th>
                                         <th>warden</th>
-                                        <th>Hostel</th>
                                         <th>status</th>
                                     </tr></thead>
                                     <tbody>
                                     <tr>
-                                        <td>Going for vellamadi party</td>
-                                        <td>Sasi kuttan</td>
-                                        <td>12/12/12</td>
-                                        <td>12/12/13</td>
-                                        <td>Binukuttan</td>
-                                        <th>Shivam</th>
-                                        <th><button class="btn btn-success">Approved</button></th>
+                                        <?php
+                                        $faculty = $_SESSION['faculty_id'];
+                                        $sql = 'SELECT * FROM `student_leave`,`warden` WHERE student_leave.warden_id = warden.warden_id';
+                                        $result = $con->query($sql);
+
+                                        if ($result->num_rows > 0) {
+                                        // output data of each row
+                                        while($row = $result->fetch_assoc()) { ?>
+                                    <tr>
+                                        <td><?php echo $row["reason"] ?></td>
+                                        <td><?php echo $row["name"] ?></td>
+                                        <td><?php echo $row["date_of_leave"] ?></td>
+                                        <td><?php echo $row["date_of_return"] ?></td>
+                                        <td><?php echo $row["warden_name"] ?></td>
+                                        <td><?php
+                                            if($row['status'] ==0){
+                                                echo '<a href="approve.php?id=' . $row['leave_id'] . '" class="btn btn-success"><i class="fa fa-check-square-o" aria-hidden="true"></i> Approve</a>';
+                                                 echo '</br>';
+                                                echo '<a href="disapprove.php?id=' . $row['leave_id'] . '" class="btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i> Disapprove</a>';
+                                            }
+                                            else if($row['status'] ==1){
+                                                echo '<button class="btn btn-info">Approved</button>';
+                                            }
+                                            else if($row['status'] ==2){
+                                                echo '<button class="btn btn-danger">Disapproved</button>';
+                                            }
+                                            ?></td>
+                                    </tr>
+                                    <?php
+                                    }
+                                    } else {
+                                        echo "0 results";
+                                    }
+
+                                    ?>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -161,7 +198,9 @@
                                 <div class="header">
                                 </div>
                                 <div class="content table-responsive table-full-width">
-                                    <table class="table table-hover table-striped">
+
+                                     <!-- print all leave forms -->
+                                    <table class="table table-bordered table-striped">
                                         <thead>
                                         <tr><th>Name</th>
                                             <th>Rollno</th>
@@ -172,12 +211,27 @@
                                         </tr></thead>
                                         <tbody>
                                         <tr>
-                                            <td>Sasi kuttan</td>
-                                            <td>AM.AR.U313BCA052</td>
-                                            <td>Sasi kuttan is bad boy. he doesnt behave properly</td>
-                                            <td>Shaji</td>
-                                            <td>Shivam</td>
-                                            <th>12/12/12</th>
+                                            <?php
+                                            $sql = "SELECT * FROM `remarks`,`student`,`warden` WHERE (remarks.student_id = student.student_id)and (remarks.warden_id = warden.warden_id) and(remarks.faculty_id = '$faculty')";
+                                            $result = $con->query($sql);
+                                            if ($result->num_rows > 0) {
+                                            // output data of each row
+                                            while($row = $result->fetch_assoc()) { ?>
+                                        <tr>
+                                            <td><?php echo $row["name"] ?></td>
+                                            <td><b><?php echo $row["student_id"] ?></b></td>
+                                            <td class="well"><?php echo $row["remark"] ?></td>
+                                            <td><?php echo $row["warden_name"] ?></td>
+                                            <td><?php echo $row["hostel_name"] ?></td>
+                                            <td><?php echo $row["date"] ?></td>
+                                        </tr>
+                                        <?php
+                                        }
+                                        } else {
+                                            echo "0 results";
+                                        }
+                                        $con->close();
+                                        ?>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -266,3 +320,5 @@
 
 
 </html>
+    <?php
+}?>

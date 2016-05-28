@@ -1,3 +1,7 @@
+<?php
+require("session.php");
+if(checkWardenSession() == 1){
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,7 +9,7 @@
     <link rel="icon" type="image/png" href="assets/img/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>Warden Dashboard</title>
+    <title>Maintenance Requests</title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -51,20 +55,20 @@
             </div>
 
             <ul class="nav">
-                <li class="active">
-                    <a href="#">
+                <li>
+                    <a href="warden_dashboard.php">
                         <i class="pe-7s-id"></i>
                         <p>Leave forms</p>
                     </a>
                 </li>
-                <li>
-                    <a href="warden_maintain.html">
+                <li class="active">
+                    <a href="#">
                         <i class="pe-7s-tools"></i>
                         <p>Maintenence Requests</p>
                     </a>
                 </li>
                 <li>
-                    <a href="warden_remark.html">
+                    <a href="warden_remark.php">
                         <i class="pe-7s-help2"></i>
                         <p>Remark</p>
                     </a>
@@ -84,10 +88,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Dashboard</a>
+                    <a class="navbar-brand" href="#">Maintenance</a>
                 </div>
                 <div class="collapse navbar-collapse">
-                    
 
                     <ul class="nav navbar-nav navbar-right">
                         <li>
@@ -126,29 +129,39 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="header">
-                        <h4 class="title">Leave forms</h4>
+                        <h4 class="title">Maintenance requests</h4>
                     </div>
                     <div class="content table-responsive table-full-width">
+                        <?php require("dbconnect.php");
+                         $current_warden = $_SESSION['warden_id'];
+                         $sql =  "SELECT * FROM `student_mnt`,`student` WHERE (student.student_id =student_mnt.student_id) and (warden = '$current_warden')";
+                        ?>
                         <table class="table table-hover table-striped">
                             <thead>
-                            <tr><th>Reason</th>
-                                <th>Name</th>
-                                <th>Date of leave</th>
-                                <th>Date of arrival</th>
-                                <th>warden</th>
-                                <th>Hostel</th>
-                                <th>status</th>
+                            <tr><th>Name</th>
+                                <th>Student ID</th>
+                                <th>Category</th>
+                                <th>Description</th>
+                                <th>Room number</th>
                             </tr></thead>
                             <tbody>
+                            <?php
+                    $result = $con->query($sql);
+
+                    if ($result->num_rows > 0) {
+                    // output data of each row
+                     while($row = $result->fetch_assoc()) {
+
+                            ?>
                             <tr>
-                                <td>Going for vellamadi party</td>
-                                <td>Sasi kuttan</td>
-                                <td>12/12/12</td>
-                                <td>12/12/13</td>
-                                <td>Binukuttan</td>
-                                <th>Shivam</th>
-                                <th><button class="btn btn-success disabled">Approved</button></th>
+                                <td><?php echo $row['name'] ?></td>
+                                <td><?php echo $row['student_id'] ?></td>
+                                <td><?php echo $row['category'] ?></td>
+                                <td><?php echo $row['description'] ?></td>
+                                <th class="text-center"><?php echo $row['room'] ?></th>
                             </tr>
+
+                         <?php } }?>
                             </tbody>
                         </table>
 
@@ -219,3 +232,4 @@
 <script src="assets/js/demo.js"></script>
 
 </html>
+<?php }?>

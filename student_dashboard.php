@@ -7,7 +7,6 @@ if(!isset($_SESSION['userid']) && !empty($_SESSION['userid'])) {
 <?php }
 else{
     ?>
-
     <!doctype html>
     <html lang="en">
     <head>
@@ -74,13 +73,13 @@ else{
                         </a>
                     </li>
                     <li>
-                        <a href="maintenance.html">
+                        <a href="maintenance.php">
                             <i class="pe-7s-tools"></i>
                             <p>Maintenance</p>
                         </a>
                     </li>
                     <li>
-                        <a href="remarks.html">
+                        <a href="remarks.php">
                             <i class="pe-7s-help2"></i>
                             <p>Remarks</p>
                         </a>
@@ -163,40 +162,50 @@ else{
 
             <div class="content">
                 <!-- Warden announcements -->
-                <div class="col-md-8">
-                    <div class="card ">
-                        <div class="header">
-                            <h4 class="title">Announcements</h4>
-                        </div>
-                        <div class="content">
-                            <div class="table-full-width">
-                                <table class="table">
-                                    <tbody>
-                                    <tr>
-                                        <th>Tommorow there will be no food!</th>
-                                        <td>Due lue lack of grociereis we are unable to cook food! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi doloribus ex molestiae placeat tempore.</td>
-                                        <td class="td-actions text-right">
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th>Tommorow there will be no food!</th>
-                                        <td>Due lue lack of grociereis we are unable to cook food! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi doloribus ex molestiae placeat tempore.</td>
-                                        <td class="td-actions text-right">
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+               <div class="row">
+                   <div class="col-md-8">
+                       <div class="card ">
+                           <div class="header">
+                               <h4 class="title">Announcements</h4>
+                           </div>
+                           <div class="content">
+                               <div class="table-full-width">
+                                   <table class="table">
+                                       <tbody>
+                                       <?php
+                                       require("dbconnect.php");
+                                       $sql = "SELECT * FROM `announcements` order by id desc limit 10";
+                                       $result = $con->query($sql);
+                                       if ($result->num_rows > 0) {
+                                           // output data of each row
+                                           while($row = $result->fetch_assoc()) { ?>
+                                               <tr>
+                                                   <th><?php echo $row['title']?></th>
+                                                   <td><?php echo $row['information']?></td>
+                                                   <td class="td-actions text-right">
+                                                   </td>
+                                               </tr>
+                                               <?php
+                                           }
+                                       } else {
+                                           echo "0 results";
+                                       }
+                                       $con->close();
+                                       ?>
+                                       </tbody>
+                                   </table>
+                               </div>
 
-                            <div class="footer">
-                                <hr>
-                                <div class="stats">
-                                    <i class="fa fa-history"></i> Updated 3 minutes ago
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                               <div class="footer">
+                                   <hr>
+                                   <div class="stats">
+                                       <i class="fa fa-history"></i> Updated 3 minutes ago
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
             </div>
 
 

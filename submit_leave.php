@@ -12,7 +12,6 @@ if(!isset($_SESSION['userid']) && !empty($_SESSION['userid'])) {
     $warden = $_POST['warden'];
     $current_user = $_SESSION['userid'];
 
-
     $insert = "INSERT INTO `student_leave`(`student_id`, `faculty_id`, `warden_id`, `name`, `reason`, `date_of_leave`, `date_of_return`, `status`) VALUES ('$current_user','$faculty','$warden','$student','$reason','$dt_leave','$dt_arr','0')";
 
     if ($con->query($insert) === TRUE) {

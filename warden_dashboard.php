@@ -1,3 +1,7 @@
+<?php
+require("session.php");
+if(checkWardenSession() == 1){
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,7 +9,7 @@
     <link rel="icon" type="image/png" href="assets/img/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>Submit Remarks</title>
+    <title>Warden Dashboard</title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -51,22 +55,34 @@
             </div>
 
             <ul class="nav">
-                <li>
-                    <a href="warden_dashboard.html">
+                <li class="active">
+                    <a href="#">
                         <i class="pe-7s-id"></i>
                         <p>Leave forms</p>
                     </a>
                 </li>
                 <li>
-                    <a href="warden_maintain.html">
+                    <a href="warden_maintain.php">
                         <i class="pe-7s-tools"></i>
                         <p>Maintenence Requests</p>
                     </a>
                 </li>
-                <li class="active">
-                    <a href="#">
+                <li>
+                    <a href="warden_remark.php">
                         <i class="pe-7s-help2"></i>
                         <p>Remark</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="warden_announce.php">
+                        <i class="pe-7s-volume"></i>
+                        <p>Announcements</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="warden_announce.php">
+                        <i class="pe-7s-search"></i>
+                        <p>Find students</p>
                     </a>
                 </li>
 
@@ -84,9 +100,11 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Remarks</a>
+                    <a class="navbar-brand" href="#">Dashboard</a>
                 </div>
                 <div class="collapse navbar-collapse">
+                    
+
                     <ul class="nav navbar-nav navbar-right">
                         <li>
                             <a href="">
@@ -117,31 +135,66 @@
                 </div>
             </div>
         </nav>
-        
+
         <div class="content">
+            <!-- Warden announcements -->
 
-            <!-- remarks -->
             <div class="col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Leave forms</h4>
+                    </div>
+                    <div class="content table-responsive table-full-width">
+                        <table class="table table-hover table-striped">
+                            <thead>
+                            <tr><th>Reason</th>
+                                <th>Name</th>
+                                <th>Date of leave</th>
+                                <th>Date of arrival</th>
+                                <th>warden</th>>
+                                <th>status</th>
+                            </tr></thead>
+                            <tbody>
+                            <tr>
+                                <?php
+                                 require("dbconnect.php");
+                                 $sql = "SELECT * FROM student_leave,warden WHERE student_leave.warden_id = warden.warden_id and ( `status` = 1 or `status` = 2  ) order by date_of_leave DESC";
 
-                <div class="content">
-                    <form>
-                        <div class="row">
-                            <div class="col-md-12">
+                                $result = $con->query($sql);
 
-                                <div class="form-group">
-                                    <label class="col-md-4 control-label">Student Register No.</label>
-                                    <input type="text" name="student" class="form-control">
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-md-4 control-label" for="reason">Remarks</label>
-                                    <textarea class="form-control" id="reason" name="reason"></textarea>
-                                </div>
-
-                        <button type="submit" class="btn btn-info btn-fill pull-right">Submit</button>
-                        <div class="clearfix"></div>
-                    </form>
-                </div>
+                                if ($result->num_rows > 0) {
+                                // output data of each row
+                                while($row = $result->fetch_assoc()) { ?>
+                            <tr>
+                                <td><?php echo $row["reason"] ?></td>
+                                <td><?php echo $row["name"] ?></td>
+                                <td><?php echo $row["date_of_leave"] ?></td>
+                                <td><?php echo $row["date_of_return"] ?></td>
+                                <td><?php echo $row["warden_name"] ?></td>
+                                <td><?php
+                                    if($row['status'] ==0){
+                                        echo '<a href="approve.php?id=' . $row['leave_id'] . '" class="btn btn-success"><i class="fa fa-check-square-o" aria-hidden="true"></i> Approve</a>';
+                                        echo '</br>';
+                                        echo '<a href="disapprove.php?id=' . $row['leave_id'] . '" class="btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i> Disapprove</a>';
+                                    }
+                                    else if($row['status'] ==1){
+                                        echo '<button class="btn btn-info">Approved</button>';
+                                    }
+                                    else if($row['status'] ==2){
+                                        echo '<button class="btn btn-danger">Disapproved</button>';
+                                    }
+                                    ?></td>
+                            </tr>
+                            <?php
+                            }
+                            } else {
+                                echo "0 results";
+                            }
+                            $con->close();
+                                ?>
+                            </tr>
+                            </tbody>
+                        </table>
 
                     </div>
                 </div>
@@ -210,3 +263,4 @@
 <script src="assets/js/demo.js"></script>
 
 </html>
+<?php }?>

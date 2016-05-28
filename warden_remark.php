@@ -1,3 +1,7 @@
+<?php
+require("session.php");
+if(checkWardenSession() == 1){
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,7 +9,7 @@
     <link rel="icon" type="image/png" href="assets/img/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>Remarks</title>
+    <title>Submit Remarks</title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -52,27 +56,21 @@
 
             <ul class="nav">
                 <li>
-                    <a href="student_dashboard.php">
-                        <i class="pe-7s-study"></i>
-                        <p>Home</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="leave_form.html">
+                    <a href="warden_dashboard.php">
                         <i class="pe-7s-id"></i>
-                        <p>Leave form</p>
+                        <p>Leave forms</p>
                     </a>
                 </li>
                 <li>
-                    <a href="maintenance.html">
+                    <a href="warden_maintain.php">
                         <i class="pe-7s-tools"></i>
-                        <p>Maintenance</p>
+                        <p>Maintenence Requests</p>
                     </a>
                 </li>
                 <li class="active">
-                    <a href="remarks.html">
+                    <a href="#">
                         <i class="pe-7s-help2"></i>
-                        <p>Remarks</p>
+                        <p>Remark</p>
                     </a>
                 </li>
 
@@ -90,14 +88,12 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Dashboard</a>
+                    <a class="navbar-brand" href="#">Remarks</a>
                 </div>
                 <div class="collapse navbar-collapse">
-                   
-
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="student_dashboard.php">
+                            <a href="">
                                 Account
                             </a>
                         </li>
@@ -125,68 +121,90 @@
                 </div>
             </div>
         </nav>
-
+        
         <div class="content">
 
-            <!-- remarks content -->
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="header">
-                        <h4 class="title">Remarks</h4>
-                    </div>
-                    <div class="content">
-                            <div class="row">
-                                <div class="col-md-12">
-                                 <div class="form-group">
-                                            <label class="remarks">Remarks in brief</label>
-                                        </div>   
+            <!-- remarks -->
+            <div class="col-md-12">
+
+                <div class="content">
+                    <form action="remark.php" method="post">
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Student Register No.</label>
+                                    <select name="name" id="student_selector" CLASS="form-control">
+                                        <?php
+                                         require("dbconnect.php");
+                                        $sql = "SELECT `name`,`student_id` FROM `student`";
+                                        $result = $con->query($sql);
+                                        if ($result->num_rows > 0) {
+                                            // output data of each row
+                                            while($row = $result->fetch_assoc()) {
+                                                ?>
+                                                <option value="<?php echo $row['student_id'] ?>"><?php echo $row['name']?> &nbsp;
+                                                    <?php  echo "(".$row['student_id'].")"?></option>
+                                                <?php
+                                            }
+                                        } else {
+                                            echo "0 results";
+                                        }
+                                        ?>
+                                    </select>
                                 </div>
+
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="reason">Remarks</label>
+                                    <textarea class="form-control" id="reason" name="reason"></textarea>
+                                </div>
+
+                        <button type="submit" class="btn btn-info btn-fill pull-right">Submit</button>
+                        <div class="clearfix"></div>
+                    </form>
+                </div>
+
+                    </div>
                 </div>
             </div>
-            <!-- maintenence form -->
-
+            <!--end  warden announcements -->
         </div>
+
+
+        <footer class="footer">
+            <div class="container-fluid">
+                <nav class="pull-left">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Company
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="copyright pull-right">
+                    &copy; 2016 <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
+                </p>
+            </div>
+        </footer>
+
     </div>
 </div>
-</div>
-</div>
-
-
-<footer class="footer">
-    <div class="container-fluid">
-        <nav class="pull-left">
-            <ul>
-                <li>
-                    <a href="#">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Company
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Portfolio
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        Blog
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <p class="copyright pull-right">
-            &copy; 2016 <a href="http://www.creative-tim.com">Creative Tim</a>, made with love for a better web
-        </p>
-    </div>
-</footer>
-
-</div>
-</div>
-
 
 </body>
 
@@ -212,5 +230,6 @@
 <!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
 <script src="assets/js/demo.js"></script>
 
-
 </html>
+
+<?php }?>

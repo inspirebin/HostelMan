@@ -28,6 +28,5 @@ else
 echo "Password Incorrect";    
 }
 }
-
 mysqli_close($con);
 ?>
