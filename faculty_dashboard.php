@@ -212,21 +212,21 @@ else{
                                         <tbody>
                                         <tr>
                                             <?php
-                                            $sql = "SELECT * FROM `remarks`,`student`,`warden` WHERE (remarks.student_id = student.student_id)and (remarks.warden_id = warden.warden_id) and(remarks.faculty_id = '$faculty')";
-                                            $result = $con->query($sql);
-                                            if ($result->num_rows > 0) {
+                                        $sql = "SELECT * FROM `remarks`,`student`,`warden` WHERE (remarks.student_id = student.student_id)and (remarks.warden_id = warden.warden_id) and(remarks.faculty_id = '$faculty')";
+                                        $result = $con->query($sql);
+                                        if ($result->num_rows > 0) {
                                             // output data of each row
                                             while($row = $result->fetch_assoc()) { ?>
-                                        <tr>
-                                            <td><?php echo $row["name"] ?></td>
-                                            <td><b><?php echo $row["student_id"] ?></b></td>
-                                            <td class="well"><?php echo $row["remark"] ?></td>
-                                            <td><?php echo $row["warden_name"] ?></td>
-                                            <td><?php echo $row["hostel_name"] ?></td>
-                                            <td><?php echo $row["date"] ?></td>
-                                        </tr>
-                                        <?php
-                                        }
+                                                <tr>
+                                                    <td><?php echo $row["name"] ?></td>
+                                                    <td><b><?php echo $row["student_id"] ?></b></td>
+                                                    <td class="well"><?php echo $row["remark"] ?></td>
+                                                    <td><?php echo $row["warden_name"] ?></td>
+                                                    <td><?php echo $row["hostel_name"] ?></td>
+                                                    <td><?php echo $row["date"] ?></td>
+                                                </tr>
+                                                <?php
+                                            }
                                         } else {
                                             echo "0 results";
                                         }
